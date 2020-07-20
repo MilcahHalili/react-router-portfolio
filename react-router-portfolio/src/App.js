@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Switch, Route, Link } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import About from './pages/About'
@@ -6,7 +6,13 @@ import Blog from './pages/Blog'
 import Projects from './pages/Projects'
 import './App.css';
 
-function App() {
+const App = () => {
+  const [posts] = useState([
+    {title: 'First post', body: 'This is the first post.'},
+    {title: 'Second post',body: 'This is the second post.'},
+    {title: 'Third post', body: 'This is the third post.'}
+  ])
+
   return (
     <div className="App">
       <header className="App-header">
@@ -49,7 +55,7 @@ function App() {
         } />
         <Route exact path='/blog' render={() =>
           <>
-            <Blog />
+            <Blog posts={posts} />
           </>
         } />
         <Route exact path='/projects' render={() =>
