@@ -8,9 +8,9 @@ import './App.css';
 
 const App = () => {
   const [posts] = useState([
-    {title: 'First post', body: 'This is the first post.'},
-    {title: 'Second post',body: 'This is the second post.'},
-    {title: 'Third post', body: 'This is the third post.'}
+    {title: 'Working From Home', body: "It's the best. I have the shortest commute ever."},
+    {title: 'I Love Pugs', body: 'I plan on becoming a dog dad soon.'},
+    {title: 'Next.js', body: 'Next is my favorite React framework.'}
   ])
 
   return (
