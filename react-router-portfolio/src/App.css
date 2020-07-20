@@ -24,6 +24,22 @@ ul {
 
 li {
   padding: 0 10px;
+  font-size: 20px;
+}
+
+a, p > a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  color: #fff;
+  -webkit-text-stroke: 0.5px #000;
 }
 
 img {
